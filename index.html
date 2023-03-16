@@ -8,17 +8,26 @@
 	<link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="style/fonts.css">
 	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="style/footer.css">
+	<!-- <link rel="stylesheet" href="style/footer.css"> -->
 	<link rel="stylesheet" href="style/header.css">
 	<link rel="stylesheet" href="style/hero.css">
-	<link rel="stylesheet" href="style/advantages.css">
-	<link rel="stylesheet" href="style/calc.css">
+	<!-- <link rel="stylesheet" href="style/advantages.css"> -->
+	<!-- <link rel="stylesheet" href="style/calc.css"> -->
+
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script defer src="./js/script.js"></script>
 </head>
 <body>
 	<header class="header">
 		<h1 class="visually-hidden">Теплый пол в каждый дом</h1>
 		<div class="container header__container">
-			<img src="image/logo.svg" class="header__logo" alt="logo">
+			<img src="image/logo.svg" class="header__logo" alt="logo"
+			width="162" height="39">
 			<button class="button header__button">Заказать</button>
 		</div>
 	</header>
@@ -33,13 +42,41 @@
 					<p class="hero__description">Устанавливаем теплые полы в квартирах, офисах и загородных домах.</p>
 					<a href="#calc" class="button link hero__link">Рассчитать стоимость</a>
 				</div>
-				<div class="hero__slider-wrapper">
-					<div class="filling">
-						<div class="filling">
-							<div class="filling hero__image"></div>
+
+				<div class="hero__slider-block">
+					<div class=" hero__slider swiper">
+						<div class=" hero__slider-wrapper swiper-wrapper">
+							<div class="swiper-slide">
+								<div class=" hero__image"
+								style="background-image: url('./image/hero__img01.jpg');"
+								></div>
+							</div>
+							<div class="swiper-slide">
+								<div class=" hero__image"
+								style="background-image: url('./image/hero_img02.jpg');"
+								></div>
+							</div>
+							<div class="swiper-slide">
+								<div class=" hero__image"
+								style="background-image: url('./image/hero_img03.jpg');"
+								></div>
+							</div>
+							<div class="swiper-slide">
+								<div class=" hero__image"
+								style="background-image: url('./image/hero_img04.jpg');"
+								></div>
+							</div>
+							<div class="swiper-slide">
+								<div class=" hero__image"
+								style="background-image: url('./image/hero_img05.jpg');"
+								></div>
+							</div>
+						
 						</div>
-						<button class="hero__slider-btn hero__slider-btn-prev"></button>
-						<button class="hero__slider-btn hero__slider-btn-next"></button>
+						<div class="hero__arrow">
+							<button class="hero__slider-btn hero__slider-btn-prev"></button>
+							<button class="hero__slider-btn hero__slider-btn-next"></button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -122,7 +159,7 @@
 	<footer class="footer section-offset">
 		<div class="container footer__container">
 
-			<img src="image/logo.svg" class="footer__logo" alt="logo">
+			<img src="image/logo.svg" class="footer__logo" alt="logo" width="162" height="39">
 
 			<ul class="footer__list footer__social">
 				<li class="footer__item">
