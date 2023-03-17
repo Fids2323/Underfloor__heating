@@ -102,14 +102,31 @@
 
 	.hero__title{
 		margin-bottom: 16px;
+		max-width: 410px;
 	}
 
 	.hero__description{
 		margin-bottom: 50px;
+		max-width: 410px;
+		font-size: 14px;
 	}
 
-	.hero__image{}
+	.hero__arrow{
+		left: auto;
+		right: var(--padding);
+		transform: none;
+	}
 }
 
 
-@media (max-width: 560px){}
+@media (max-width: 560px){
+	.hero__description{
+		font-size: 12px;
+		margin-bottom: 24px;
+	}
+
+	.hero__slider-block{
+		min-width: var(--width-slide);
+		margin: 0 auto;
+	}
+}
