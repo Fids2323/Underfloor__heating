@@ -33,6 +33,10 @@
 	flex-grow: 1;
 }
 
+.hero__link{
+	text-decoration: none;
+}
+
 
 .hero__image {
 	width: var(--width-slide);
@@ -68,6 +72,14 @@
 	border: 0;
 	padding: 0;
 	cursor: pointer;
+}
+
+.hero__slider-btn:hover {
+	background-color: #FFD952
+}
+
+.hero__slider-btn:active {
+	background-color: #9E7B00
 }
 
 .hero__slider-btn-next {
